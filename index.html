@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <title>Signup Form</title>
+  </head>
+  <body>
+    <form class="formItems" id="signupForm" style="display: block">
+      <section
+        style="display: flex; flex-direction: column; align-items: center"
+      >
+        <h1 style="font-size: 4rem">Signup Form</h1>
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <div
+            class="upperBtn"
+            style="
+              display: flex;
+              justify-content: center;
+              height: 3.7rem;
+              align-items: center;
+              border: 1px solid rgb(217, 217, 217);
+              width: 24rem;
+              border-radius: 1rem;
+              margin: 2rem 0rem;
+            "
+          >
+            <button
+              style="
+                height: 3.7rem;
+                width: 12rem;
+                border: none;
+                background-color: white;
+                border-radius: 1rem;
+                font-size: 1.4rem;
+              "
+              id="loginLink"
+            >
+              Login
+            </button>
+            <button
+              style="
+                height: 3.7rem;
+                width: 12rem;
+                border: none;
+                background-image: linear-gradient(
+                  to right,
+                  rgb(0, 21, 97),
+                  rgb(2, 111, 228)
+                );
+                color: white;
+                border-radius: 1rem;
+                font-size: 1.4rem;
+              "
+            >
+              Signup
+            </button>
+          </div>
+          <input
+            type="text"
+            placeholder="Name"
+            style="
+              width: 23rem;
+              height: 3.5rem;
+              border-radius: 1rem;
+              font-size: 1.4rem;
+              padding-left: 1rem;
+              border: 1px solid rgb(225, 225, 225);
+              margin: 0.7rem 0rem;
+              box-shadow: 0rem 0.1rem 0.05rem rgb(217, 217, 217);
+            "
+          />
+          <input
+            type="email"
+            placeholder="Email Address"
+            style="
+              width: 23rem;
+              height: 3.5rem;
+              border-radius: 1rem;
+              font-size: 1.4rem;
+              padding-left: 1rem;
+              border: 1px solid rgb(225, 225, 225);
+              margin: 0.7rem 0rem;
+              box-shadow: 0rem 0.1rem 0.05rem rgb(217, 217, 217);
+            "
+          />
+          <input
+            type="password"
+            placeholder="password"
+            style="
+              width: 23rem;
+              height: 3.5rem;
+              border-radius: 1rem;
+              font-size: 1.4rem;
+              padding-left: 1rem;
+              border: 1px solid rgb(225, 225, 225);
+              margin: 0.7rem 0rem;
+              box-shadow: 0rem 0.1rem 0.05rem rgb(217, 217, 217);
+            "
+          />
+          <input
+            type="password"
+            placeholder="Confirm password"
+            style="
+              width: 23rem;
+              height: 3.5rem;
+              border-radius: 1rem;
+              font-size: 1.4rem;
+              padding-left: 1rem;
+              border: 1px solid rgb(225, 225, 225);
+              margin: 0.7rem 0rem;
+              box-shadow: 0rem 0.1rem 0.05rem rgb(217, 217, 217);
+            "
+          />
+          <button
+            style="
+              width: 24.5rem;
+              height: 3.8rem;
+              border-radius: 1rem;
+              font-size: 1.4rem;
+              margin: 0.7rem 0rem;
+              background-image: linear-gradient(
+                to right,
+                rgb(0, 21, 97),
+                rgb(2, 111, 228)
+              );
+              color: white;
+            "
+          >
+            Signup
+          </button>
+          <p style="font-size: 1.4rem; color: rgb(120, 120, 120)">
+            Already have an account?
+            <span style="color: rgb(0, 115, 255)">
+              <a href="#" id="loginLink2" style="color: rgb(0, 115, 255)"
+                >Login</a
+              ></span
+            >
+          </p>
+        </div>
+      </section>
+    </form>
+    <form class="formItems" style="display: none" id="loginForm">
+      <section
+        style="display: flex; flex-direction: column; align-items: center"
+      >
+        <div style="display: flex; flex-direction: column; align-items: center">
+          <h1 style="font-size: 4rem">Login Form</h1>
+          <div
+            class="upperBtn"
+            style="
+              display: flex;
+              justify-content: center;
+              height: 3.7rem;
+              align-items: center;
+              border: 1px solid rgb(217, 217, 217);
+              width: 24rem;
+              border-radius: 1rem;
+              margin: 2rem 0rem;
+            "
+          >
+            <button
+              style="
+                height: 3.7rem;
+                width: 12rem;
+                border: none;
+                background-color: white;
+                border-radius: 1rem;
+                font-size: 1.4rem;
+                background-image: linear-gradient(
+                  to right,
+                  rgb(0, 21, 97),
+                  rgb(2, 111, 228)
+                );
+                color: white;
+              "
+            >
+              Login
+            </button>
+            <button
+              style="
+                height: 3.7rem;
+                width: 12rem;
+                border: none;
+                background-color: white;
+                border-radius: 1rem;
+                font-size: 1.4rem;
+              "
+              id="signupLink"
+            >
+              Signup
+            </button>
+          </div>
+          <input
+            type="email"
+            placeholder="Email Address"
+            style="
+              width: 23rem;
+              height: 3.5rem;
+              border-radius: 1rem;
+              font-size: 1.4rem;
+              padding-left: 1rem;
+              border: 1px solid rgb(225, 225, 225);
+              margin: 0.7rem 0rem;
+              box-shadow: 0rem 0.1rem 0.05rem rgb(217, 217, 217);
+            "
+          />
+          <input
+            type="password"
+            placeholder="password"
+            style="
+              width: 23rem;
+              height: 3.5rem;
+              border-radius: 1rem;
+              font-size: 1.4rem;
+              padding-left: 1rem;
+              border: 1px solid rgb(225, 225, 225);
+              margin: 0.7rem 0rem;
+              box-shadow: 0rem 0.1rem 0.05rem rgb(217, 217, 217);
+            "
+          />
+          <button
+            style="
+              width: 24.5rem;
+              height: 3.8rem;
+              border-radius: 1rem;
+              font-size: 1.4rem;
+              margin: 0.7rem 0rem;
+              background-image: linear-gradient(
+                to right,
+                rgb(0, 21, 97),
+                rgb(2, 111, 228)
+              );
+              color: white;
+            "
+          >
+            Login
+          </button>
+          <span style="color: rgb(0, 115, 255); font-size: 1.4rem"
+            >Forgot your password?</span
+          >
+        </div>
+      </section>
+    </form>
+    <script src="dynamic.js"></script>
+  </body>
+</html>
